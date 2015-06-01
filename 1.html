@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="G:/课件/敏捷软件开发/all/新建文件夹/jquery.mobile-1.4.5.min.css">
+<script src="G:/课件/敏捷软件开发/all/新建文件夹/jquery.min.js"></script>
+<script src="G:/课件/敏捷软件开发/all/新建文件夹/jquery.mobile-1.4.5.min.js"></script>
+<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+<style>
+.ui-block-a, 
+.ui-block-b, 
+.ui-block-c
+{
+background-color: lightgray;
+border: 1px solid black;
+height: 100px;
+font-weight: bold;
+text-align: center;
+padding: 60px;
+}
+</style>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+  </div>
+
+  <div data-role="content">
+     <button>您的满意，就是我们最大的欢喜！</button>
+ <div class="ui-grid-b">
+     <div class="ui-block-a" style="border: 1px solid black;"><span> [背景]</span></div>
+     <div class="ui-block-b" style="border: 1px solid black;"><span>我们每天中午去食堂吃饭 然而我们学校并没有菜单 看不见每天中午 食堂有什么菜 </span></div>
+     <div class="ui-block-a" style="border: 1px solid black;"><span>[功能]</span></div>
+     <div class="ui-block-b" style="border: 1px solid black;"><span>1.菜单：学一食堂 学二食堂 清真 都可以把每天的 菜单 更新 2.定时：可以提前定时，二楼食堂，可以有送餐人员。提前选好吃的东西 3排号：每天打饭很拥挤。可以专门开出一个窗口，学生 的饭菜可以提前做好 学生凭借号去窗口取饭</span></div>
+     <div class="ui-block-a" style="border: 1px solid black;"><span>[预期目标] </span></div>
+     <div class="ui-block-b" style="border: 1px solid black;"><span>想法很美好，现实很骨感，技术层面的东西还是不好完成，没有一个代码思路</span></div>
+   </div>
+
+    <a align="center" href="#pagetwo" >六</a><br>
+    <a href="#pageth" >一</a><br>
+    <a href="#pagefour" data-transition="slide">快</a><br>
+    <a href="#pagefive" data-transition="slide">乐</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+  </div>
+
+  <div data-role="content">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="plus">更多</a></li>
+        <li><a href="#" data-icon="minus">更少</a></li>
+        <li><a href="#" data-icon="delete">删除</a></li>
+        <li><a href="#" data-icon="check">喜爱</a></li>
+        <li><a href="#" data-icon="info">信息</a></li>
+        <li><a href="#" data-icon="forward">向前</a></li>
+        <li><a href="#" data-icon="back">向后</a></li>
+        <li><a href="#" data-icon="star">星形</a></li>
+        <li><a href="#" data-icon="gear">选项</a></li>
+        <li><a href="#" data-icon="search">搜索</a></li>
+      </ul>
+    </div>
+    <p>Goodbye!</p>
+    <a href="#pageone">转到页面一</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+ </div>
+
+
+  <div data-role="page" id="pageth">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+  </div>
+
+  <div data-role="content">
+    <p>Goodbye!</p>
+    <a href="#pageone">转到页面一</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+ </div>
+
+ <div data-role="page" id="pagefour">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+  </div>
+
+  <div data-role="content">
+    <p>点击链接来查看反向的滑动效果（从左向右滑动到前一页）</p>
+    <a href="#pageone" data-transition="slide" data-direction="reverse">滑动到页面一（反向）</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div>
+
+  <div data-role="page" id="pagefive">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+  </div>
+
+  <div data-role="content">
+    <p>点击链接来查看反向的滑动效果（从左向右滑动到前一页）</p>
+    <a href="#pageone" data-transition="slide" data-direction="reverse">滑动到页面一（反向）</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+</body>
+</html>
