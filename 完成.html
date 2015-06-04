@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="G:/课件/敏捷软件开发/all/新建文件夹/jquery.mobile-1.4.5.min.css">
+<script src="G:/课件/敏捷软件开发/all/新建文件夹/jquery.min.js"></script>
+<script src="G:/课件/敏捷软件开发/all/新建文件夹/jquery.mobile-1.4.5.min.js"></script>
+<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+<style>
+.ui-block-a, 
+.ui-block-b, 
+.ui-block-c
+{
+background-color: lightgray;
+border: 1px solid black;
+height: 100px;
+font-weight: bold;
+text-align: center;
+padding: 60px;
+}
+</style>
+</head>
+<body>
+
+<div  data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+  </div>
+
+  <div data-role="content">
+     <button>您的满意，就是我们最大的欢喜！</button><br>
+ <div align="center" class="ui-grid-b">
+  <a  href="#pagetwo" >今日菜单</a><br><br><br>
+    <a href="#pageth" >输入信息</a><br><br><br>
+    <a href="#pagefour" data-transition="slide">选择订单</a><br><br><br>
+    <a href="#pagefive" data-transition="slide">关于我们</a><br><br><br><br><br><br><br><br><br><br>
+   
+   </div>
+
+    
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" class="ui-btn-active ui-state-persist" data-icon="home">首页</a></li>
+  </div>
+</div>
+  <div data-role="content">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" data-icon="plus">一、红烧肉</a></li>
+        <li><a href="#page2" data-icon="minus">二、鱼香肉丝</a></li>
+        <li><a href="#page3" data-icon="delete">三、糖醋排骨</a></li>
+        <li><a href="#page4" data-icon="check">四、回锅肉</a></li>
+        <li><a href="#page5" data-icon="info">五、红烧茄子</a></li>
+        <li><a href="#page6" data-icon="forward">六、肉末茄子</a></li>
+        <li><a href="#page7" data-icon="back">七、佛跳墙</a></li>
+        <li><a href="#page8" data-icon="star">八、红烧排骨</a></li>
+        <li><a href="#page9" data-icon="gear">九、可乐鸡翅</a></li>
+        <li><a href="#page10" data-icon="search">十、宫保鸡丁</a></li>
+      </ul>
+    </div>
+    <p>快乐每一天*.*</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+ </div>
+
+
+  <div data-role="page" id="pageth">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+     <div data-role="navbar">
+
+      <ul>
+        <li><a href="#pageone" class="ui-btn-active ui-state-persist" data-icon="home">首页</a></li>
+
+    
+  </div>
+  <form method="post" action="demoform.asp">
+      <label for="fname">姓 ：</label>
+      <input type="text" name="fname" id="fname" data-role="none">
+      <label for="fname">名 ：</label>
+      <input type="text" name="fname" id="fname" data-role="none">
+      <label for="fname">地址 ：</label>
+      <input type="text" name="fname" id="fname" data-role="none">
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+</div>
+
+  </div>
+  </div>
+
+  <div data-role="content">
+    <p>Goodbye!</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+ </div>
+
+ <div data-role="page" id="pagefour">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" class="ui-btn-active ui-state-persist" data-icon="home">首页</a></li>
+  </div>
+   <h2>菜品选择</h2>
+  <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true" data-filter-placeholder="搜索菜名 ...">
+    <li><a href="#page11">一、红烧肉</a></li>
+    <li><a href="#page11">二、鱼香肉丝</a></li>
+    <li><a href="#page11">三、糖醋排骨</a></li>
+    <li><a href="#page11">四、回锅肉</a></li>
+    <li><a href="#page11">五、红烧茄子</a></li>
+    <li><a href="#page11">六、肉末茄子</a></li>
+    <li><a href="#page11">七、佛跳墙</a></li>
+    <li><a href="#page11">八、红烧排骨</a></li>
+    <li><a href="#page11">九、可乐鸡翅</a></li>
+    <li><a href="#page11">十、宫保鸡丁</a></li>
+    
+  </ul>
+  </div>
+
+  <div data-role="content">
+    <p></p>
+    <a href="#pageone" data-transition="slide" data-direction="reverse">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div>
+
+  <div data-role="page" id="pagefive">
+  <div data-role="header">
+    <h1>学生订餐系统</h1>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" class="ui-btn-active ui-state-persist" data-icon="home">首页</a></li>
+
+
+  </div>
+
+
+
+  </div>
+
+  <div data-role="content">
+ <div align="center" class="ui-grid-b">
+  
+     <div  class="ui-block-a" style="border: 1px solid black;"><span> [背景]</span></div>
+     <div align="center" class="ui-block-b" style="border: 1px solid black;"><span>我们每天中午去食堂吃饭 然而我们学校并没有菜单 看不见每天中午 食堂有什么菜 </span></div>
+     <div align="center" class="ui-block-a" style="border: 1px solid black;"><span>[流程]</span></div>
+     <div  align="center"class="ui-block-b" style="border: 1px solid black;"><span>1.菜单查看；2.输入自己的信息；3.完成订单</span></div>
+     <div  align="center"class="ui-block-a" style="border: 1px solid black;"><span>[完成目标] </span></div>
+     <div align="center" class="ui-block-b" style="border: 1px solid black;"><span>完成预期的一部分内容，还需要继续完成和完善，我们会加油的</span></div>
+     <div  align="center"class="ui-block-a" style="border: 1px solid black;"><span>[小组人员] </span></div>
+     <div align="center" class="ui-block-b" style="border: 1px solid black;"><span>张戈彤；薛鹏程；张雪梅；高瑜；张琴</span></div>
+  </div>
+   </div>
+    <p></p>
+    <a href="#pageone" data-transition="slide" data-direction="reverse">回到首页</a>
+
+     
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+
+<div data-role="page" id="page1">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>红烧肉是热菜菜谱之一。以五花肉为制作主料，最好选用肥瘦相间的三层肉来做。红烧肉的烹饪技巧以砂锅为主，肥瘦相间，香甜松软，入口即化。红烧肉在我国各地流传甚广，是一道著名的 大众菜肴。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page2">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>鱼香肉丝是一道经典的汉族传统名菜，鱼香是川菜主要传统味型之一。成菜具有鱼香味，但其味并不来自鱼，而是泡红辣椒、葱、姜、蒜、糖、盐、酱油等调味品调制而成。此法源出于四川地区民间独具特色的烹鱼调味方法，而今已广泛用于川味的熟菜中，具有咸、酸、甜、辣、香、鲜和浓郁的葱、姜、蒜味的特色。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+ <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page3">
+  <div data-role="header">
+ <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>糖醋排骨(Sweet and Sour Spare Ribs)是糖醋味型中具有代表性的一道大众喜爱的汉族传统名菜，它选用新鲜猪子排作料，肉质鲜嫩，成莱色泽红亮油润。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+<h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page4">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>回锅肉是汉族特色菜肴。属中国八大菜系川菜中一种烹调猪肉的传统菜式，川西成都一带称作熬锅肉，川东重庆一带称为回锅肉。川渝地区家家户户都能制作。回锅肉的特点是：口味独特，色泽红亮，肥而不腻，入口浓香。所谓回锅，就是再次烹调的意思。回锅肉作为一道传统川菜，在川菜中的地位是非常重要的，川菜考级经常用回锅肉作为首选菜肴。回锅肉一直被认为是川菜之首，川菜之化身，提到川菜必然想到回锅肉。它色香味俱全，颜色养眼，是最好的下饭菜之首选。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+<h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page5">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>红烧茄子是一道历史久远的汉族传统佳肴，此菜是素菜中的精细者。鲜香适口，外酥里嫩，味美多汁，大众食品。北魏高阳太守贾思勰在《齐民要术》素食篇中，记有烧茄子法。文记：“缹茄子法：用子未成者，子成则不好也。以竹刀骨刀四破之，用铁则渝黑，汤蝶去腥气。细切葱白，熬油令香，苏弥好。香酱清，孽葱白，与茄子俱下。缹令熟，下椒姜末。”从记中可知其法精细。后来的红烧茄子，还加适量白糖，盐，肉沫，以调口味。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+ <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page6">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>此菜品为以茄子和猪肉为主要食材的汉族特色菜肴，起源于西汉，属于家常菜。营养丰富，且容易上手。色香味俱全，营养丰富。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+
+<div data-role="page" id="page7">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>佛跳墙，又名满坛香、福寿全，是福建福州的汉族名菜，属闽菜系。相传，它是在清道光年间由福州聚春园菜馆老板郑春发研制出来的。佛跳墙富含营养，可促进发育，美容，延缓衰老，增强免疫力，乃进补佳品。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page8">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>红烧排骨，家常菜。此菜味道香咸，排骨酥烂，色泽金红。男女老少人都可食用。适宜于 气血不足，阴虚纳差者；湿热痰滞内蕴者慎服；肥胖、血脂较高者不宜多食。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+ <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page9">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>可乐鸡翅，以鸡翅和可乐为主料制作而成。味道鲜美，色泽艳丽，鸡翅嫩滑，咸甜适中，又保留了可乐的香气，深受大众喜欢。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+ <h1>BIPT-07</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page10">
+  <div data-role="header">
+    <h1>菜品介绍</h1>
+  </div>
+
+  <div data-role="content">
+    <p>宫保鸡丁选用鸡肉为主料，佐以花生米、黄瓜、辣椒等辅料烹制而成。 红而不辣、辣而不猛、香辣味浓、肉质滑脆。由于其入口鲜辣，鸡肉的鲜嫩配合花生的香脆。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+<h1>BIPT-07</h1>
+  </div>
+</div> 
+
+
+<div data-role="page" id="page11">
+  <div data-role="header">
+    <h1>欢迎光临</h1>
+  </div>
+
+  <div data-role="content">
+    <p>订单选择成功，谢谢选择我们。</p>
+    <a href="#pageone">回到首页</a>
+  </div>
+
+  <div data-role="footer">
+<h1>BIPT-07</h1>
+  </div>
+</div> 
+</body>
+</html>
